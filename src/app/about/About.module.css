@@ -1,0 +1,5 @@
+.container {
+  padding: 100px;
+  justify-content: center;
+  display: flex;
+}

@@ -1,0 +1,35 @@
+/* page.module.css */
+
+.container {
+    display: flex; /* Use flexbox to layout children */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    margin-bottom: 60px;
+    width: 100%; /* Take up 100% of the parent width */
+    justify-content: center;
+  }
+  
+  .tileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Adjust the gap between tiles */
+    margin: 5px auto; /* Center the tile containers horizontally */
+    flex-direction: row; /* Default direction is row */
+    
+  }
+  
+  @media (max-width: 700px) {
+    .tileContainer {
+      flex-direction: column; /* Stack tiles vertically on small screens */
+      width: 90%; /* Adjust width for small screens */
+      margin: 5px auto; /* Keep the tile containers centered */
+    }
+  }
+  
+  .linesContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure this container takes the full width */
+  }
+  

@@ -1,0 +1,111 @@
+
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    color: black;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    position: relative; /* Add relative positioning */
+    /* border-bottom: 1px solid #C6C6C6; */
+}
+
+.outerContainer {
+    /* display: flex;
+    justify-content: center; */
+}
+
+/* .headerContainer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5%; 
+    width: 90%; 
+    height: 1px;
+    background-color: #C6C6C6;
+} */
+  .brand {
+    font-size: 22px;
+    /* cursor: pointer; */
+  }
+  
+  .navLinks {
+    display: flex;
+  }
+  
+  .navLink {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
+    color: #898787;
+    /* cursor: pointer; */
+    color: inherit;
+    text-decoration: inherit;
+
+  }
+
+  .navLink:active {
+    color: 'black'
+  }
+
+  .roboto {
+    font-family: var(--font-roboto-mono);
+    color:#898787;
+  }
+  
+  .bebas {
+    font-family: var(--font-bebas-neue);
+    font-weight: 400;
+   
+  }
+
+
+  .hamburger {
+    display: flex; /* This will vertically center the icon align-items style */
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .hamburgerIcon {
+    /* Creates a column of three lines */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Spreads the lines out evenly */
+    height: 20px; /* Total height of the icon */
+    width: 35px; /* Width of the icon */
+  }
+  
+  
+  .hamburgerIcon div {
+    height: 1px; /* Height of each line */
+    width: 100%; /* Full width of the parent */
+    background-color: #4A4A4A; /* Color of the lines */
+    transition: all 0.3s ease; /* Smooth transition for animations */
+  }
+  .mobileMenu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Directly below the header */
+    left: 0;
+    right: 0;
+    background-color: white; /* Or any color that fits your design */
+  }
+  
+  /* Media query to handle mobile view */
+  @media (max-width: 700px) {
+    .hamburger {
+      display: block; /* Show the hamburger icon */
+    }
+  
+    .navLinks {
+      display: none; /* Hide the normal navigation links */
+    }
+  
+    .mobileMenu {
+      display: block; /* Show the mobile menu when it's open */
+    }
+  }
+  
+

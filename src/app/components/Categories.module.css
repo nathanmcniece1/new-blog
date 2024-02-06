@@ -1,0 +1,56 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.frame {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 0px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.text {
+    color: #898787;
+    font-size: 16px;
+    font-weight: 300;
+    /* padding: 10px; */
+}
+
+.dot {
+    color: #898787; 
+}
+
+.roboto {
+    font-family: var(--font-roboto-mono);
+  }
+  
+  .bebas {
+    font-family: var(--font-bebas-neue);
+  }
+
+  @media (max-width: 700px) {
+    .text {
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    .frame {
+        gap: 10px;
+    }
+}
+
+/* Media query for viewport widths of less than 480px */
+@media (max-width: 480px) {
+    .text {
+        font-size: 12px; /* Even smaller font size for very narrow viewports */
+    }
+
+    .frame {
+        gap: 8px;
+    }
+}
