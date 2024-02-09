@@ -47,7 +47,7 @@ function Header() {
           </div>
         ) : (
           <div className={styles.navLinks}>
-            <h2 className={`${styles.navLink} ${styles.roboto}`}><Link href="/about">Writing</Link></h2>
+            <h2 className={`${styles.navLink} ${styles.roboto}`}><Link href="/">Writing</Link></h2>
             <h2 className={`${styles.navLink} ${styles.roboto}`}><Link href="/about">About</Link></h2>
             <h2 className={`${styles.navLink} ${styles.roboto}`}><Link href="/about">Projects</Link></h2>
           </div>

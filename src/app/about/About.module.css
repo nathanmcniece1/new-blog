@@ -1,5 +1,28 @@
 .container {
-  padding: 100px;
-  justify-content: center;
-  display: flex;
-}
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This ensures all children, including text and images, are centered */
+    max-width: 800px;
+    padding: 0 100px; /* Adjusted to ensure padding doesn't affect centering */
+  }
+  
+  .roboto {
+    font-family: var(--font-roboto-mono);
+  }
+  
+  .outerContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* If .xLogo is applied to a wrapper around the Image component */
+  .xLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure it takes the full width to center its children */
+    align-items: center; /* Center the image vertically if needed */
+    border-radius: 35px;
+    margin-top: 35px;
+  }
+  

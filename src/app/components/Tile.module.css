@@ -27,6 +27,7 @@
 }
 
 .body {
+    display: none;
     font-weight: 400;
     color: #5F5F5F;
     font-size: 12px;
@@ -63,7 +64,6 @@
     .tileContainer {
       flex-direction: column;
       width: 90%;
-      margin: 5px auto; /* Centers the tileContainer within its parent */
       justify-content: center;
     }
   }
@@ -79,4 +79,11 @@
     display: flex;
     justify-content: center;
     width: 100%; /* Make sure this is set to 100% to take full width */
+  }
+
+  @media (min-width: 601px) {
+    .body {
+      display: flex; /* Show body text when the viewport is wider than 600px */
+      /* ... other styles for .body ... */
+    }
   }
