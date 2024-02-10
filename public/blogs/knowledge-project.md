@@ -2,7 +2,7 @@
 title: "The Knowledge Project"
 subtitle: "On the Need for an Applied Philosophy"
 date: "2021-01-12"
-category: "General philosophy"
+category: philosophy
 preview: "Knowledge is a mysterious thing. So mysterious, in fact, that after thousands of years of inquiry into its nature, we remain uncertain as to whether or not it’s even a thing. In fairness, though, skepticism — of the epistemological variety — is a largely academic view. Most who pay the matter little mind take knowledge..."
 ---
 

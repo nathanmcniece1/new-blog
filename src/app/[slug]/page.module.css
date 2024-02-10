@@ -18,12 +18,26 @@
     flex-direction: row; /* Default direction is row */
     
   }
+
+  .cardContainer {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Default direction is row */
+    gap: 5px; /* Adjust the gap between tiles */
+    max-width: 80%; /* Limit the width of the cards */
+    flex-wrap: wrap; /* Wrap cards to the next line if they don't fit */
+  }
   
   @media (max-width: 700px) {
     .tileContainer {
       flex-direction: column; /* Stack tiles vertically on small screens */
       width: 90%; /* Adjust width for small screens */
       margin: 5px auto; /* Keep the tile containers centered */
+    }
+    .cardContainer {
+      
+      max-width: 100%;
     }
   }
   

@@ -10,11 +10,11 @@ function Categories(){
                 <p className={styles.dot}> &#x2022;</p>
                 <p className={styles.text}><Link href="/crypto">Crypto</Link></p>
                 <p className={styles.dot}> &#x2022;</p>
-                <p className={styles.text}><Link href="/crypto">Philosophy</Link></p>
+                <p className={styles.text}><Link href="/philosophy">Philosophy</Link></p>
                 <p className={styles.dot}> &#x2022;</p>
-                <p className={styles.text}><Link href="/crypto">Biology</Link></p>
+                <p className={styles.text}><Link href="/biology">Biology</Link></p>
                 <p className={styles.dot}> &#x2022;</p>
-                <p className={styles.text}><Link href="/crypto">Misc</Link></p>
+                <p className={styles.text}><Link href="/misc">Misc</Link></p>
             </div>
         </div>
         </>
