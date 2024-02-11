@@ -16,13 +16,19 @@
     justify-content: center;
   }
   
-  /* If .xLogo is applied to a wrapper around the Image component */
+  /* Updated .xLogo for wrapping div around Image component */
   .xLogo {
-    display: flex;
+    border-radius: 35px; /* If you want rounded corners for the images or their wrappers */
+    overflow: hidden; /* Ensures the border-radius applies if the Image is larger than the container */
+    display: inline-flex; /* Use inline-flex to prevent stretching */
     justify-content: center;
-    width: 100%; /* Ensure it takes the full width to center its children */
-    align-items: center; /* Center the image vertically if needed */
-    border-radius: 35px;
+    align-items: center;
     margin-top: 35px;
+  }
+  
+  .imageContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; /* Adds space between the child elements */
   }
   

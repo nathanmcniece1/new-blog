@@ -27,14 +27,33 @@
   flex-direction: row; /* Default direction is row */
   box-sizing: border-box; /* Padding and border included in the width */
 }
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Default direction is row */
+    gap: 5px; /* Adjust the gap between tiles */
+    max-width: 80%; /* Limit the width of the cards */
+    flex-wrap: wrap; /* Wrap cards to the next line if they don't fit */
+
+  }
 
 @media (max-width: 700px) {
   .tileContainer {
     flex-direction: column;
     width: 90%;
     justify-content: center;
+    
   }
+  
 }
+@media only screen and (max-width: 770px) {
+  .cardContainer {
+    max-width: 100%; /* Adjust the width of the cards */
+    
+    
+  }
+  }
 
 .linesContainer {
   display: flex;

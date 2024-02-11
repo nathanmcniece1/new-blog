@@ -15,13 +15,13 @@ function extractTitleFromMarkdown(markdownContent, heading) {
 }
 
 
-function Card({data}) {
+function Tile({data}) {
     const title = extractTitleFromMarkdown(data, 'title');
     const preview = extractTitleFromMarkdown(data, 'preview');
     const date = extractTitleFromMarkdown(data, 'date');
     return (
         <>
-            <div className={styles.cardContainer}>
+            <div className={styles.card}>
                 <div className={`${styles.content} ${styles.roboto}`}>
                     <h2 className={`${styles.title} ${styles.roboto}`}>
                         {title}
@@ -43,4 +43,4 @@ function Card({data}) {
     )
 }
 
-export default Card;
+export default Tile;
