@@ -13,24 +13,13 @@ function About() {
                     </p>
                     <div className={styles.imageContainer}>
                         {/* Twitter link */}
-                        <a href="https://twitter.com/cypheronin" target="_blank" rel="noopener noreferrer">
-                            <Image
-                                className={styles.xLogo}
-                                src="/twitter.png"
-                                alt="Twitter Logo"
-                                width={35}
-                                height={35}
-                            />
+                        <a href="https://twitter.com/cypheronin" target="_blank" rel="noopener noreferrer" className={styles.specialLink}>
+                            <p className={`${styles.roboto} ${styles.text}`}>X</p>
                         </a>
+                        <p className={`${styles.roboto} ${styles.text}`}>/</p>
                         {/* Warpcast link */}
-                        <a href="https://warpcast.com/musashi" target="_blank" rel="noopener noreferrer">
-                            <Image
-                                className={styles.xLogo}
-                                src="/warpcast.png"
-                                alt="Warpcast Logo"
-                                width={35}
-                                height={35}
-                            />
+                        <a href="https://warpcast.com/musashi" target="_blank" rel="noopener noreferrer" className={styles.specialLink}>
+                            <p className={`${styles.roboto} ${styles.text}`}>Farcaster</p>
                         </a>
                     </div>
                 </div>

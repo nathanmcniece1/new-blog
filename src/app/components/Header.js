@@ -34,7 +34,7 @@ function Header() {
     <div className={styles.outerContainer}>
       <div className={styles.headerContainer}>
         <div className={styles.brand}>
-          <h1 className={styles.bebas}>MUSASHI</h1>
+          <h1 className={styles.bebas}><Link href="/">MUSASHI</Link></h1>
         </div>
 
         {isMobileView ? (

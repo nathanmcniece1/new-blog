@@ -9,6 +9,7 @@
   
   .roboto {
     font-family: var(--font-roboto-mono);
+    font-weight: 300;
   }
   
   .outerContainer {
@@ -32,3 +33,10 @@
     gap: 15px; /* Adds space between the child elements */
   }
   
+  .text {
+    color: #898787
+  }
+
+  .specialLink:hover p {
+    color: black; /* This will apply to <p> within the <a> tag on hover */
+  }
